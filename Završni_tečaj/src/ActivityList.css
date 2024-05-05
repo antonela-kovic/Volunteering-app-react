@@ -1,0 +1,234 @@
+/* Stilovi za kontejner aktivnosti */
+.activity-list-container {
+  max-width: 800px; /* Postavlja maksimalnu širinu kontejnera */
+  margin: auto; /* Centrira kontejner na stranici */
+  padding: 20px; /* Dodaje unutarnji prostor oko sadržaja */
+}
+/*Dodatak*/
+.activity-list-container input[type="text"] {
+  max-width: 780px;
+}
+/**/
+
+.activity-list-container h2 {
+  text-align: center; /* Centrira naslov */
+  font-size: 28px; /* Postavlja veličinu fonta */
+  margin-bottom: 20px; /* Dodaje razmak ispod naslova */
+}
+
+/* Stilovi za labele */
+.activity-list-container label {
+  font-weight: bold; /* Postavlja podebljan font za labele */
+  width: 100px;
+  height: 30px;
+}
+
+/* Stilovi za inpute, selecte i texteare */
+.activity-list-container select,
+.activity-list-container input[type="text"],
+.activity-list-container textarea {
+  width: 100%; /* Popunjava cijelu širinu kontejnera */
+  padding: 10px; /* Dodaje unutarnji prostor oko elemenata */
+  margin-bottom: 10px; /* Dodaje razmak ispod elemenata */
+  font-size: 16px; /* Postavlja veličinu fonta */
+}
+
+/* Stilovi za prikaz aktivnosti u gridu */
+.activity-list-container .activity-list {
+  display: grid; /* Koristi CSS grid za prikaz elemenata */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Postavlja dinamičke kolone u gridu */
+  gap: 20px; /* Dodaje razmak između elemenata u gridu */
+}
+
+/* Stilovi za kartice aktivnosti */
+.activity-list-container .activity-card {
+  background-color: #f9f9f9; /* Postavlja pozadinu kartice */
+  padding: 20px; /* Dodaje unutarnji prostor u kartici */
+  border-radius: 10px; /* Zaobljuje rubove kartice */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Dodaje sjenu kartici */
+  border: 2px solid #007bff;
+  border-radius: 10px;
+}
+
+.activity-list-container .activity-card h3 {
+  margin-top: 0; /* Uklanja gornji rub naslova */
+  margin-bottom: 10px; /* Dodaje razmak ispod naslova */
+  font-size: 20px; /* Postavlja veličinu fonta naslova */
+}
+
+.activity-list-container .activity-card p {
+  margin: 5px 0; /* Dodaje vanjski prostor oko paragrafa */
+}
+
+.activity-list-container .activity-card button {
+  margin-top: 10px; /* Dodaje razmak iznad gumba */
+  padding: 8px 15px; /* Dodaje unutarnji prostor u gumbu */
+  background-color: #007bff; /* Postavlja pozadinu gumba */
+  color: white; /* Postavlja boju teksta gumba */
+  border: none; /* Uklanja granicu gumba */
+  border-radius: 5px; /* Zaobljuje rubove gumba */
+  cursor: pointer; /* Postavlja kursor na pokazivač */
+  transition: background-color 0.3s ease; /* Dodaje prijelaz boje pozadine gumba */
+}
+
+.activity-list-container .activity-card button:hover {
+  background-color: #0056b3; /* Promjena boje pozadine gumba na hover */
+}
+
+/* Stilovi za modal */
+.modal {
+  display: none; /* Inicijalno sakriva modal */
+  position: fixed; /* Postavlja poziciju na fiksnu */
+  z-index: 1; /* Postavlja z-index na 1 */
+  left: 0; /* Postavlja lijevu granicu na 0 */
+  top: 0; /* Postavlja gornju granicu na 0 */
+  width: 100%; /* Postavlja širinu na 100% */
+  height: 100%; /* Postavlja visinu na 100% */
+  overflow: auto; /* Omogućava skrolovanje */
+  background-color: rgba(0,0,0,0.4); /* Postavlja poluprozirnu pozadinu */
+  border: 2px solid #007bff;
+  border-radius: 10px;
+}
+
+.modal-content {
+  background-color: #fefefe; /* Postavlja pozadinu modalnog sadržaja */
+  margin: 15% auto; /* Postavlja margine */
+  padding: 20px; /* Dodaje unutarnji prostor */
+  border: 1px solid #888; /* Dodaje granicu */
+  width: 100%; /* Postavlja širinu */
+  border-radius: 10px; /* Zaobljuje rubove */
+}
+
+.close {
+  color: #aaa; /* Postavlja boju ikone za zatvaranje */
+  float: right; /* Poravnava ikonu na desno */
+  font-size: 28px; /* Postavlja veličinu fonta */
+  font-weight: bold; /* Postavlja debljinu fonta */
+}
+
+.close:hover,
+.close:focus {
+  color: black; /* Promjena boje ikone na hover ili focus */
+  text-decoration: none; /* Uklanja podcrtavanje */
+  cursor: pointer; /* Postavlja kursor na pokazivač */
+}
+
+.modal-content button {
+  margin-top: 10px; /* Dodaje razmak iznad gumba */
+  padding: 8px 15px; /* Dodaje unutarnji prostor u gumbu */
+  background-color: #007bff; /* Postavlja pozadinu gumba */
+  color: white; /* Postavlja boju teksta gumba */
+  border: none; /* Uklanja granicu gumba */
+  border-radius: 5px; /* Zaobljuje rubove gumba */
+  cursor: pointer; /* Postavlja kursor na pokazivač */
+  transition: background-color 0.3s ease; /* Dodaje prijelaz boje pozadine gumba */
+}
+
+.modal-content button:hover {
+  background-color: #0056b3; /* Promjena boje pozadine gumba na hover */
+  border: 2px solid #007bff;
+  border-radius: 10px;
+}
+
+/* Stilizacija headera */
+header {
+  background-color:white;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  color:black;
+}
+
+header h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+/* Navigacijska traka */
+nav {
+  text-align: center; /* Centriranje linkova */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color:grey; /* Postavljanje početne boje linkova */
+}
+
+nav ul li a:hover {
+  text-decoration: underline; 
+  color: gray ;
+}
+
+
+/* Uredenje nove aktivnosti upita */
+.nova-aktivnost.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.nova-aktivnost.container h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input-group input[type="text"],
+.input-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.input-group textarea {
+  height: 100px; /* Podešavanje visine tekstualnog polja */
+}
+
+.btn-add {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-add:hover {
+  background-color: #0056b3;
+}
+
+/* Promjena boje linkova na hover */
+nav ul li a:hover {
+  color: gray; /* Postavlja sivu boju linkova na hover */
+}

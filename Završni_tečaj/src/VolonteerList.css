@@ -1,0 +1,221 @@
+/*VolonterList.css*/
+h2{
+  text-align: center;
+}
+
+/* Stilizacija filtera */
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filters input[type="text"],
+.filters select {
+  padding: 10px;
+  font-size: 16px;
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.filters input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Stilizacija liste volontera */
+.volunteer-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Stilizacija kartice volontera */
+.volunteer-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px; /* Postavlja marginu na 0 tj uklanja razmak izmedu kartica*/
+ 
+  
+}
+
+.volunteer-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.volunteer-card p {
+  margin: 5px 0;
+}
+
+.volunteer-card ul {
+  padding-left: 20px;
+}
+
+.volunteer-card button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.volunteer-card button:hover {
+  background-color: #0056b3;
+}
+
+/* Dodatna stilizacija za unos novog volontera */
+.volunteer-list-container input[type="text"],
+.volunteer-list-container select {
+  width: calc(100% - 20px);
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.volunteer-list-container h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.volunteer-list-container div {
+  margin-bottom: 20px;
+}
+
+.volunteer-list-container button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.volunteer-list-container button:hover {
+  background-color: #0056b3;
+}
+
+.volunteer-list-container div label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.volunteer-list-container div label input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Stilizacija dodatnog kontejnera za dodavanje novog volontera */
+.add-volunteer-container {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-volunteer-container h3 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.add-volunteer-container input[type="text"],
+.add-volunteer-container select {
+  width: calc(100% - 20px);
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.add-volunteer-container div {
+  margin-bottom: 20px;
+}
+
+.add-volunteer-container div label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.add-volunteer-container div label input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.add-volunteer-container button {
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-volunteer-container button:hover {
+  background-color: #0056b3;
+}
+
+/*Dio za navigacijsku traku*/
+header {
+  background-color:grey;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+/* Navigacijska traka */
+nav {
+  text-align: center; /* Centriranje linkova */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color:grey;
+}
+
+.admin-toggle-volonter{
+  background-color:black;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: right;
+}
+
+
+

@@ -1,0 +1,25 @@
+.container {
+    background-color: #f2f2f2; /* Siva boja okvira */
+    padding: 20px; /* Prostor unutar okvira */
+    border-radius: 10px; /* Zaobljeni rubovi */
+    text-align: center; /* Centriranje teksta */
+    margin: auto; /* Centriranje okvira na stranici */
+    width: 50%; /* Širina okvira */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Dodaje sjenku */
+}
+h3 {
+    color: rgb(94, 94, 125); 
+    margin-bottom: 15px; 
+} 
+p {
+    color: #ffcc00; 
+    margin: 10px 0; 
+    text-align: center;
+}  
+hr {
+    border: 1px solid #ddd; 
+}
+
+
+
+  

@@ -1,0 +1,47 @@
+#rcorners2 {
+    border-radius: 25px;
+    background:rgb(66, 67, 76);
+    padding: 20px;
+    width: 450px;
+    height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: white;
+}
+.naslov1 { 
+    color:rgb(94, 94, 125);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.podnaslov1{
+    text-align: left;
+    color:darkgoldenrod;
+}
+.pod1{
+    text-align: right;
+    color:darkgoldenrod;  
+}
+.skill {
+    margin-bottom: 20px;
+}
+input[type="range"] {
+    width: 80%;
+    height: 10%;
+    background-color: #e67e22; 
+}
+input[type="range"]::-webkit-slider-thumb {
+    background-color: #e67e22; 
+}
+span {
+    display: inline-block;
+    margin-left: 10px;
+    color:black; 
+}
+.podnaslov2{
+    text-align: center;
+    color:darkgoldenrod;
+}
+

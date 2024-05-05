@@ -1,0 +1,44 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+body {
+  background-color:black; 
+  
+}
+header { 
+padding: 20px;
+text-align: center;
+color:#ffcc00;
+}
+nav img {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: 4px solid rgb(66, 67, 76);
+}
+
+section {
+  background-color:rgb(66, 67, 76);/* Siva boja okvira */
+  padding: 20px; /* Prostor unutar okvira */
+  border-radius: 10px; /* Zaobljeni rubovi */
+  text-align: center; /* Centriranje teksta */
+  margin: auto; /* Centriranje okvira na stranici */
+  width: 450px; /* Širina okvira */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Dodaje sjenku */
+}
+
+
+
+
+
+
+
+
+

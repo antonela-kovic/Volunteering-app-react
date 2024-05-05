@@ -1,0 +1,97 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color:rgb(188, 184, 184);
+  background-position: center;
+}
+
+.kontakt-container {
+  border: 2px solid #007bff; /* Plava obrubljena linija */
+  border-radius: 5px; /* Zaobljeni rubovi */
+  padding: 10px; /* Razmak unutar kontejnera */
+}
+
+.naruci-btn {
+  background-color: #28a745; /* Zelena boja */
+  color: white; /* Bijeli tekst */
+  border: none; /* Uklanja obrub gumba */
+  padding: 10px 20px; /* Prilagodi padding */
+  border-radius: 5px; /* Zaobljeni rubovi */
+  cursor: pointer; /* Promjena kursora prilikom prelaska */
+}
+
+.naruci-btn:hover {
+  background-color: #218838; /* Tamnija nijansa zelene boje prilikom hovera */
+}
+
+h5 {
+  text-align: left;
+}
+
+h6 {
+  text-align: left;
+}
+
+
+.kontakt-container1 {
+  border: 2px solid #007bff; /* Plava obrubljena linija */
+  border-radius: 5px; /* Zaobljeni rubovi */
+  padding: 10px; /* Razmak unutar kontejnera */
+  text-align: left;
+}
+
+label {
+  text-align: left;
+}
+
+.kontakt-container2 {
+  border: 2px solid #007bff; /* Plava obrubljena linija */
+  border-radius: 5px; /* Zaobljeni rubovi */
+  padding: 10px; /* Razmak unutar kontejnera */
+  margin-top: 1px;
+  
+}

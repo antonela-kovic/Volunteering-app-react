@@ -7,19 +7,19 @@ Ovaj projekt je web aplikacija izrađena u Reactu koja omogućuje pregled i upra
 
 ## Ključne funkcionalnosti
 
-**Pregled aktivnosti i organizacija**
+**Pregled aktivnosti i organizacija** -
 Korisnici mogu pregledavati listu volonterskih aktivnosti i organizacija s osnovnim detaljima i slikama.
 
-**Interaktivna karta**
+**Interaktivna karta** -
 Aplikacija integrira Google Maps API (kroz `@react-google-maps/api`) za vizualizaciju lokacija aktivnosti na mapi.
 
-**Navigacija između stranica**
+**Navigacija između stranica** -
 React Router omogućuje jednostavnu navigaciju između Home stranice, liste aktivnosti i liste organizacija.
 
-**Globalno stanje korisnika**
+**Globalno stanje korisnika** -
 Pomoću React Contexta (`UserContext.jsx`) aplikacija održava globalne podatke o korisniku koji su dostupni kroz sve komponente.
 
-**Moderna vizualizacija**
+**Moderna vizualizacija** -
 Projekt koristi CSS za prilagodbu stilova (komponente kao što su `ActivityList.css`, `Organizations.css`, `VolonteerList.css`).
 
 ---

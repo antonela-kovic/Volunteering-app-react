@@ -1,75 +1,70 @@
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { UserContext } from './UserContext';
-import './Home1.css';
+import './Home.css';
 
 const Home = () => {
   const { isAdmin, toggleAdmin } = useContext(UserContext);
 
   return (
     <div>
-      <header className='home-header'>
-       <h1>Dobrodošli na volontersku aplikaciju</h1>
-        <nav className='home-nav'>
+      <header className="home-header">
+        <h1>Welcome to the volunteering app</h1>
+        <nav className="home-nav">
           <ul>
-            <li><Link to="/activities">Aktivnosti</Link></li>
-            <li><Link to="/volunteers">Volonteri</Link></li>
-            <li><Link to="/organizations">Udruge</Link></li>
+            <li><Link to="/activities">Activities</Link></li>
+            <li><Link to="/volunteers">Volunteers</Link></li>
+            <li><Link to="/organizations">Organisations</Link></li>
           </ul>
-          <label className='admin-toggle'>
+          <label className="admin-toggle">
             Admin:
             <input type="checkbox" checked={isAdmin} onChange={toggleAdmin} />
           </label>
         </nav>
       </header>
-       {/* Ovdje je desni stupac */}
-       <div className="component-container2">
-          {/* <h3>Slike </h3> */}
-          <br></br>
-          <br></br>
-          <img src='volonter2.png' alt=''  width="300" height="200"/>  
-          <img src='volonter5.jpg' alt='' width="300" height="200" style={{ display: 'block' }} />
-      </div>  
-       {/* Ovdje je lijevi stupac */}
-      <div className="component-container">
-          <h2>Predstavljanje autora</h2>
-          <p>Dobro došli na moju web stranicu o volonterina koja je napravljena kao </p>
-          <p>projekt u sklopu završnog rada za tečaj pod organizacijom Digitalne Dalmacije.</p>
-          <p>Digitalna Dalmacija pruža mogućnost stjecanja dodatnog znanja za polaznike </p>
-          <p>na području web tehnologija.</p>
-          <p>Moje ime je Antonela Ković i studentica sam 3.godine računarstva na </p>
-          <p>Fakultetu elektrotehnike,strojarstva i brodogradnje.</p>
-          <p>Pohađanje tečaja je proširilo moje znanje i vještine programiranja za internet </p>
-          <p>kao i motivaciju za daljnje napredovanje i istraživanje nekih novih tehnologija.</p>
-          <br></br>
-          <img src='volonter6.jpg' alt='' width="300" height="200" style={{ display: 'block' }} />
+
+      {/* Right column */}
+      <div className="component-container2">
+        <img src="/images/volunteers-1.png" alt="Volunteers at work" width="300" height="200" />
+        <img src="/images/volunteers-2.jpg" alt="Volunteers" width="300" height="200" style={{ display: 'block' }} />
       </div>
-      {/* Srednji dio */}
-      <main className='container'>
+
+      {/* Left column */}
+      <div className="component-container">
+        <h2>About the project</h2>
+        <p>
+          This web app for volunteers was built by Antonela Ković as the final project of a web
+          development course organised by Digitalna Dalmacija.
+        </p>
+        <p>
+          The course expanded my web programming skills and my motivation to keep learning new technologies.
+        </p>
+        <img src="/images/volunteers-3.jpg" alt="Volunteering" width="300" height="200" style={{ display: 'block' }} />
+      </div>
+
+      {/* Middle section */}
+      <main className="container">
         <div className="general-section">
-          <h2 style={{ color:'green' }}>Općenito</h2>
+          <h2 style={{ color: 'green' }}>Overview</h2>
           <p>
-            Unutar ove web stranice možete pronaći trenutne volonterske aktivnosti, popis volontera i udruga.
-            Potaknite posjetitelje i ljude u svojoj okolini da se uključe i postanu volonteri nudeći im jednostavan 
-            način za prijavu ili informacije o nadolazećim događajima na kojima mogu sudjelovati.Sretno!!!
+            Here you can find current volunteering activities and lists of volunteers and organisations.
+            Encourage the people around you to get involved: they can sign up for an activity or find out
+            about upcoming events in a few clicks.
           </p>
         </div>
-        <div className="dropdown">npm run build
-          <h2 style={{ color:'green' }}>Saznajte više!</h2>
-          {/* <button className="dropbtn">Poveznice na društvene mreže</button> */}
-          <div className="dropdown-content2">
-            <li><a href="https://www.vcz.hr/cesta-pitanja/">Česta pitanja</a></li>
-            <li><a href="https://www.volonterski-centar-ri.org/mogucnosti-i-prednosti-volontiranja/">Mogućnosti i prednosti volontiranja</a></li>
-            <li><a href="https://youth.europa.eu/go-abroad/volunteering/volunteer-around-world_hr">Volontirajte diljem svijeta</a></li>
-          </div>
-          {/* <h2>Antonela Ković</h2> */}
-          <br></br>
-          <button className="dropbtn">Poveznice na društvene mreže/Projekti autora stranice</button>
-          <div className="dropdown-content">
+        <div className="dropdown">
+          <h2 style={{ color: 'green' }}>Learn more</h2>
+          <ul className="dropdown-content2">
+            <li><a href="https://www.vcz.hr/cesta-pitanja/">Frequently asked questions (Volunteer Centre Zagreb)</a></li>
+            <li><a href="https://www.volonterski-centar-ri.org/mogucnosti-i-prednosti-volontiranja/">Benefits of volunteering</a></li>
+            <li><a href="https://youth.europa.eu/go-abroad/volunteering/volunteer-around-world_en">Volunteer around the world</a></li>
+          </ul>
+          <br />
+          <button className="dropbtn">Author&apos;s profiles and projects</button>
+          <ul className="dropdown-content">
             <li><a href="https://github.com/antonela-kovic">GitHub</a></li>
             <li><a href="https://www.linkedin.com/in/antonela-kovi%C4%87-706249308/">LinkedIn</a></li>
-            {/* /*<li><a href="https://www.instagram.com">Instagram</a></li> */}
-          </div>
+          </ul>
         </div>
       </main>
     </div>

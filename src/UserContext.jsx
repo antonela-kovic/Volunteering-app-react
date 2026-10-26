@@ -1,17 +1,16 @@
-import  { createContext, useState } from 'react';
+import { createContext, useState } from 'react';
 import PropTypes from 'prop-types';
 
-// createContext: Ova funkcija stvara kontekst koji će se koristiti za dijeljenje podataka između komponenti u React aplikaciji.
-// Kontekst omogućuje komponentama da komuniciraju bez potrebe za proslijeđivanjem props-ova kroz svaku razinu hijerarhije komponenata.
-// export: Ovaj ključna riječ označava da se UserContext izvozi iz datoteke, što znači da će biti dostupan drugim dijelovima aplikacije koji ga uvezu.
-
+// React Context shares the admin flag between pages without passing props
+// through every level of the component tree. The "Admin" checkbox in the
+// navigation simulates logging in as an administrator.
 export const UserContext = createContext();
 
 export const UserProvider = ({ children }) => {
   const [isAdmin, setIsAdmin] = useState(false);
 
   const toggleAdmin = () => {
-    setIsAdmin(prevState => !prevState);
+    setIsAdmin((prevState) => !prevState);
   };
 
   return (
@@ -22,7 +21,7 @@ export const UserProvider = ({ children }) => {
 };
 
 UserProvider.propTypes = {
-    children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired,
 };
 
 export default UserContext;

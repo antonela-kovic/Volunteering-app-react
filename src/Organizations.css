@@ -53,7 +53,7 @@
   
   /* Modal styles */
   .modal {
-    display: block; /* Prikaži modal */
+    display: block;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -88,31 +88,29 @@
     cursor: pointer;
   }
 
-/* Dodano pravilo za centriranje naslova */
 .organizations-container .title {
     text-align: center;
     margin-bottom: 20px;
 }
   
-/* Dodano pravilo za centriranje gumba */
 .organizations-container .add-button {
     display: block;
     margin: auto;
 }
   
 .nav-organizations a {
-    color:white;/* Postavlja boju slova na crnu za linkove */
-    text-decoration: none; /* Uklanja podcrtavanje */  
+    color:white;
+    text-decoration: none;
 }
   
 .nav-organizations a:hover {
-    text-decoration: underline; /* Dodaje podcrtavanje na hover */
+    text-decoration: underline;
 }
 
-/*Navigacijska traka*/
+/* Navigation bar */
 nav {
-  text-align: center; /* Centriranje linkova */
-  background-color: black !important;/**/
+  text-align: center;
+  background-color: black !important;
 }
 
 nav ul {
@@ -141,7 +139,7 @@ header{
   background-color: black;
 }
 
-/*Efekt promjene boje kada se prijede preko udruga*/
+/* Hover effect on organisations */
 .hover-effect:hover {
   background-color: #eaeaea;
 }

@@ -1,0 +1,175 @@
+/* Stilizacija headera */
+.home-header {
+    background-color: black;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+/* Navigacijska traka */
+.home-nav {
+    text-align: center;
+   /* Centriranje linkova */
+}
+.home-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.home-nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.home-nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+.home-nav ul li a:hover {
+    text-decoration: underline;
+    color:grey;
+}
+/* Stilizacija glavne sekcije */
+main {
+    padding: 20px;
+}
+main > div {
+    margin-bottom: 30px;
+}
+main h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+main p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+main ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+main ul li {
+    margin-bottom: 10px;
+}
+main ul li a {
+    color:black;
+    text-decoration: none;
+}
+main ul li a:hover {
+    text-decoration: underline;
+    color: black;
+}
+/* Stilizacija društvenih mreža */
+.social-links {
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+.social-links a {
+    color: #007bff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+.social-links a:hover {
+    color: #0056b3;
+}
+/* Stilizacija gumba za administratora */
+.admin-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color:black;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: right;
+}
+.admin-toggle:hover {
+    background-color: grey;
+}
+/* Stilizacija općenitog okvira */
+.general-section {
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 30px;
+    margin: auto; /* Centriranje općenitog okvira */
+    width: 40%;/*  Prilagododba širine prema potrebi */
+}
+.dropdown {
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 30px;
+    margin: auto;/* Centriranje općenitog okvira */
+    width: 40%;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px white;
+    z-index: 1;
+    width: 80%;
+    margin: 0 auto;
+   /* Centriranje */
+}
+
+.dropdown-content a {
+    color:black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color:rgb(183, 179, 179);
+}
+.dropbtn{
+    text-align: center;
+}
+a {
+    color:black;
+}
+/*O meni dio*/
+.component-container{
+    position: fixed;
+    top: 2;
+    float: left;
+    padding: 10px;
+}
+/* Stilizacija desne komponente */
+.component-container2 {
+    position: fixed;
+   /* Postavlja element na fiksnu poziciju u odnosu na preglednik */
+    top: 20px;
+   /* Postavlja udaljenost od vrha preglednika */
+    right: 20px;
+   /* Postavlja udaljenost od desnog ruba preglednika */
+    padding: 10px;
+   /* Dodaje 10 piksela unutarnjeg prostora unutar elementa */
+    margin-top: 100px; /* Prilagodi vrijednost po potrebi */
+    margin-right: 40px;
+}
+h3{
+    color:black;
+}
+/*Postavljamo velicinu fonta za dio predstavljanje autora*/
+.component-container{
+    font-size: small;
+}

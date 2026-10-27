@@ -1,5 +1,6 @@
 /* Header */
 .home-header {
+    position: relative;
     background-color: black;
     color: #ffffff;
     padding: 20px;
@@ -102,16 +103,13 @@ main ul li a:hover {
     border-radius: 15px;
     padding: 20px;
     margin-bottom: 30px;
-    margin: auto;
-    width: 40%;
 }
 .dropdown {
     border: 2px solid black;
     border-radius: 15px;
     padding: 20px;
     margin-bottom: 30px;
-    margin: auto;
-    width: 40%;
+    position: relative;
 }
 /* Dropdown content (hidden by default) */
 .dropdown-content {
@@ -145,31 +143,73 @@ main ul li a:hover {
 a {
     color:black;
 }
-/* About me */
-.component-container{
-    position: fixed;
-    top: 180px;
-    left: 20px;
-    width: 320px;
-    padding: 10px;
+/* Three-column layout: about the project | overview | photos.
+   The columns stack on narrow screens instead of overlapping. */
+.home-layout {
+    display: grid;
+    grid-template-columns: 300px minmax(0, 1fr) 300px;
+    gap: 32px;
+    align-items: start;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 30px 20px;
 }
-/* Right column */
-.component-container2 {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    padding: 10px;
-    margin-top: 100px;
-    margin-right: 40px;
+.home-layout main {
+    padding: 0;
+}
+.home-left,
+.home-right {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.home-left {
+    font-size: small;
+}
+.home-left h2 {
+    margin: 0;
+}
+.home-left p {
+    margin: 0;
+}
+.home-left img,
+.home-right img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+.home-right img {
+    object-fit: cover;
+}
+/* clip-art on a white background: show it whole instead of cropping it */
+.home-left img {
+    max-width: 300px;
+    margin: 0 auto;
+    object-fit: contain;
+}
+@media (max-width: 1100px) {
+    .home-layout {
+        grid-template-columns: 1fr;
+        max-width: 700px;
+    }
+    .home-right {
+        flex-direction: row;
+    }
+    .home-right img {
+        width: calc(50% - 8px);
+    }
+    /* below the navigation instead of over the title */
+    .admin-toggle {
+        position: static;
+        display: inline-block;
+        margin-top: 10px;
+        padding: 6px 12px;
+    }
 }
 h3{
     color:black;
 }
-/* About the author */
-.component-container{
-    font-size: small;
-}
-
 /* Link lists */
 .dropdown-content,
 .dropdown-content2 {

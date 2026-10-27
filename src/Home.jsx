@@ -58,7 +58,7 @@ const Home = () => {
             <button className="dropbtn">Author&apos;s profiles and projects</button>
             <ul className="dropdown-content">
               <li><a href="https://github.com/antonela-kovic">GitHub</a></li>
-              <li><a href="https://www.linkedin.com/in/antonela-kovi%C4%87-706249308/">LinkedIn</a></li>
+              <li><a href="https://www.linkedin.com/in/antonela-kovic/">LinkedIn</a></li>            
             </ul>
           </div>
         </main>
